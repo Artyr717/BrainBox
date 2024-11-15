@@ -1,35 +1,39 @@
 {% extends "base.html" %}
 
 {% block content %}
-<!-- Hero Section with Rounded Corners -->
-<div class="bg-info text-white py-5 rounded-4">
-    <div class="container text-center">
-        <h1 class="display-4 fw-bold">Добро пожаловать в BrainBox!</h1>
-        <p class="lead">Ваш помощник в подготовке и повторении материалов по алгебре, геометрии и физике.</p>
+
+<!-- Hero Section with Background Image -->
+<div class="text-white py-5 position-relative"
+     style="background: url('/static/images/background.jpeg') no-repeat center center/cover; height: 35vh; border-radius: 20px;">
+    <div class="container text-center d-flex align-items-center justify-content-center h-100">
+        <!-- Text Content with Background -->
+        <div class="bg-white text-dark p-3 rounded opacity-75">
+            <h1 class="fw-bold">Добро пожаловать в BrainBox!</h1>
+            <p class="mb-0">Ваш помощник в подготовке и повторении материалов по школьным предметам.</p>
+        </div>
     </div>
 </div>
+
 
 <!-- About Section -->
 <div id="about" class="py-5">
     <div class="container">
         <h2 class="text-center fw-bold mb-4">О нашем сайте</h2>
         <p class="text-center lead">BrainBox создан для того, чтобы упростить обучение и повторение основных предметов
-            для школьников. Здесь вы найдете подробные объяснения, интерактивные задания и материалы, которые помогут
-            лучше понять учебные темы.</p>
+            для школьников. Здесь вы найдете подробный материал, который поможет закрепить знания.</p>
     </div>
 </div>
 
 <!-- Features Section -->
 <div class="bg-light py-5 rounded-4">
     <div class="container">
-        <h2 class="text-center fw-bold mb-4">Почему выбирают нас</h2>
+        <h2 class="text-center fw-bold mb-4">Почему стоит пользоваться сайтом</h2>
         <div class="row text-center">
             <div class="col-md-4 mb-3">
                 <div class="card border-0 shadow">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold">Подробные уроки</h5>
-                        <p class="card-text">Учебные материалы, подготовленные специалистами, охватывают все важные темы
-                            и помогают понять сложные концепции.</p>
+                        <h5 class="card-title fw-bold">Хороший материал</h5>
+                        <p class="card-text">Учебные материалы охватывают все важные темы.</p>
                     </div>
                 </div>
             </div>
@@ -37,7 +41,7 @@
                 <div class="card border-0 shadow">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Свободный доступ</h5>
-                        <p class="card-text">Все материалы доступны 24/7, что позволяет изучать предметы в удобное
+                        <p class="card-text">Все материалы доступны 24/7, что позволяет повторить темы в удобное
                             время.</p>
                     </div>
                 </div>
@@ -45,8 +49,8 @@
             <div class="col-md-4 mb-3">
                 <div class="card border-0 shadow">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold">Практические задания</h5>
-                        <p class="card-text">Интерактивные упражнения и тесты для закрепления изученных тем.</p>
+                        <h5 class="card-title fw-bold">Краткость - сестра таланта!</h5>
+                        <p class="card-text">Материал на сайте не требует много времени для поиска или чтения.</p>
                     </div>
                 </div>
             </div>
