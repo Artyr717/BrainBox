@@ -54,9 +54,11 @@
                         Геометрия
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="geometryDropdown">
-                        <li><a class="dropdown-item" href="#">7 класс</a></li>
-                        <li><a class="dropdown-item" href="#">8 класс</a></li>
-                        <li><a class="dropdown-item" href="#">9 класс</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('geometry', class=7) }}">7 класс</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('geometry', class=8) }}">8 класс</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('geometry', class=9) }}">9 класс</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('geometry', class=10) }}">10 класс</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('geometry', class=11) }}">11 класс</a></li>
                     </ul>
                 </li>
 
