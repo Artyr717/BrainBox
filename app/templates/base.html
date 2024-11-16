@@ -71,9 +71,11 @@
                         Физика
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="physicsDropdown">
-                        <li><a class="dropdown-item" href="#">7 класс</a></li>
-                        <li><a class="dropdown-item" href="#">8 класс</a></li>
-                        <li><a class="dropdown-item" href="#">9 класс</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('physics', class=7) }}">7 класс</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('physics', class=8) }}">8 класс</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('physics', class=9) }}">9 класс</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('physics', class=10) }}">10 класс</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('physics', class=11) }}">11 класс</a></li>
                     </ul>
                 </li>
 

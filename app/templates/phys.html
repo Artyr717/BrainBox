@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- PDF Viewer Section -->
+<div class="bg-info text-white py-5 rounded-4">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold">Физика для {{ class_number }} класса</h1>
+        <p class="lead">Просматривайте материалы и повторяйте темы</p>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="text-center">
+        <p class="fw-bold">Ниже представлен учебный материал:</p>
+    </div>
+    <!-- PDF Viewer using ViewerJS -->
+    <div class="border rounded-4 shadow">
+        <iframe src="{{ file_path }}#viewer.action=fullscreen" width="100%" height="600px"
+                allowfullscreen></iframe>
+    </div>
+</div>
+
+{% endblock %}

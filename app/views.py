@@ -37,3 +37,17 @@ class AlgebraView(MethodView):
             11: "/static/algebra11.pdf"
         }
         return render_template("algebra.html", file_path=algebra_dict[class_number], class_number=class_number)
+
+class PhysicsView(MethodView):
+    """Класс представления страницы 'Физика' """
+
+    def get(self) -> str:
+        class_number = request.args.get('class', default=7, type=int)
+        phys_dict = {
+            7: "/static/phys7.pdf",
+            8: "/static/phys8.pdf",
+            9: "/static/phys9.pdf",
+            10: "/static/phys10.pdf",
+            11: "/static/phys11.pdf"
+        }
+        return render_template("phys.html", file_path=phys_dict[class_number], class_number=class_number)
